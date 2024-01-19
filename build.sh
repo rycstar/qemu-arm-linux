@@ -14,7 +14,8 @@ function download_linux() {
   then 
     echo linux-${KERNEL_VERSION}.tar.xz exist
   else 
-    wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-${KERNEL_VERSION}.tar.xz
+#    wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-${KERNEL_VERSION}.tar.xz
+    wget https://mirror.bjtu.edu.cn/kernel/linux/kernel/v4.x/linux-${KERNEL_VERSION}.tar.xz
   fi
 
   if [ -e linux-${KERNEL_VERSION} ]
